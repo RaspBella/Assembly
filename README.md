@@ -1,5 +1,7 @@
 # Assembly
-Example:
-	nasm -f elf64 file.asm -o file.o	#Assembley creating file.o
-	ld file.o -o file			#Link the object file
-	./file					#Run the file
+### Assemble the source; creating file.o
+- nasm -f elf64 file.asm -o file.o
+### Link the object; creating an executable
+- ld file.o -o file
+### Run the executable file
+- ./file
