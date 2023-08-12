@@ -12,5 +12,5 @@ _start:
     syscall
 
     mov rax, 60 ; sys call for exit
-    mov rdi, 0 ; return value for success
+    mov rdi, 0 ; return code for success
     syscall
