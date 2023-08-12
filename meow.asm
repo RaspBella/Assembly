@@ -6,7 +6,7 @@ section .text
 
 _start:
     mov rax, 1 ; sys call for write
-    mov rdi, 1 ; stdout file descripter
+    mov rdi, 1 ; stdout file descriptor
     mov rsi, message
     mov rdx, 22 ; amount of bytes in message
     syscall
