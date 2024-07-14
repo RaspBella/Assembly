@@ -18,7 +18,7 @@ _start:
     // write question
     mov $1, %rax                /* syscall number */
     mov $1, %rdi                /* stdout */
-    lea question(%rip), %rsi    /* buffer */
+    mov $question, %rsi    	/* buffer */
     mov $question_len, %rdx     /* len */
     syscall
 
