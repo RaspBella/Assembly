@@ -1,11 +1,11 @@
 %include "linux64.inc"
 
 section .data
-	text db "Hello, world!",10,0
+    text db "Hello, world!", 10, 0 ; null terminated string
 
 section .text
-	global _start
+    global _start
 
 _start:
-	print text
-	exit
+    print text
+    exit
