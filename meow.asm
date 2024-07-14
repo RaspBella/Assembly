@@ -1,16 +1,16 @@
 section .data
-	message db "Hello, everynyan :3c!", 10
+    message db "Hello, everynyan :3c!", 10
 
 section .text
-	global _start
+    global _start
 
 _start:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, message
-	mov rdx, 22
-	syscall
+    mov rax, 1 ; sys call for write
+    mov rdi, 1 ; stdout file descripter
+    mov rsi, message
+    mov rdx, 22 ; amount of characters in message
+    syscall
 
-	mov rax, 60
-	mov rdi, 0
-	syscall
+    mov rax, 60 ; sys call for exit
+    mov rdi, 0 ; return value for success
+    syscall
