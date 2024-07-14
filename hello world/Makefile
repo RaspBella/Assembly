@@ -7,3 +7,6 @@ ${BIN}: ${OBJ}
 
 ${OBJ}: ${SRC}
 	as $< -o $@
+
+clean:
+	rm ${BIN} ${OBJ}
